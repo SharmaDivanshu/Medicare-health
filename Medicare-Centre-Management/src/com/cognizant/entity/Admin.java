@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class Admin {
 	@Id
 	@Column(name="Admin_Id")
-	private int AdminId;
+	private String AdminId;
 	
 	@Column(name="First_Name")
 	private String FirstName;
@@ -24,11 +24,11 @@ public class Admin {
 	@Column(name="Gender")
 	private String Gender;
 	
-	public int getAdminId() {
+	public String getAdminId() {
 		return AdminId;
 	}
 
-	public void setAdminId(int adminId) {
+	public void setAdminId(String adminId) {
 		AdminId = adminId;
 	}
 
@@ -72,19 +72,19 @@ public class Admin {
 		DoB = doB;
 	}
 
-	public String getContact_Number() {
+	public int getContact_Number() {
 		return Contact_Number;
 	}
 
-	public void setContact_Number(String contact_Number) {
+	public void setContact_Number(int contact_Number) {
 		Contact_Number = contact_Number;
 	}
 
-	public String getAlt_Contact_Number() {
+	public int getAlt_Contact_Number() {
 		return Alt_Contact_Number;
 	}
 
-	public void setAlt_Contact_Number(String alt_Contact_Number) {
+	public void setAlt_Contact_Number(int alt_Contact_Number) {
 		Alt_Contact_Number = alt_Contact_Number;
 	}
 
@@ -100,10 +100,10 @@ public class Admin {
 	private String DoB;
 	
 	@Column(name="Contact_Number")
-	private String Contact_Number;
+	private int Contact_Number;
 	
 	@Column(name="Alt_Contact_Number")
-	private String Alt_Contact_Number;
+	private int Alt_Contact_Number;
 	
 	@Column(name="Email_Id")
      private String Email_Id;
